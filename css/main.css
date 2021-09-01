@@ -1,0 +1,237 @@
+:root{
+	--color-azul: rgb(0, 0, 0);
+	--color-blanco: rgb(255,255,255);
+	--color-azul-cian: rgb(28, 88, 255);
+	--letras-btn: #fff;
+}
+
+/* @font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/Montserrat-Regular.ttf");
+} */
+
+body {
+	background: var(--color-blanco) fixed no-repeat 0 0;
+	background-size: cover;
+	background-position: center center;
+	font-family: "Montserrat", Regular;
+}
+
+.menu-fixed{ /*controla la posicion del nav*/
+	position: fixed;
+  	width: 100%;
+  	top:0;
+  	z-index: 1000;
+  	box-shadow: 0px 4px 3px rgba(0,0,0,0.2);
+}
+
+
+/*-------------------------botones---------------------------*/
+.btn-blue{
+	background-color: #1b396a;
+	color: var(--color-blanco);
+	border-color: #1b396a;
+	border-radius: 25px;
+}
+
+.btn-blue:hover{
+	background-color: #0b244b;
+	color: var(--color-blanco);
+	border-color: #0b244b;
+	border-radius: 25px;
+}
+
+.btn-descarga{
+	background-color: #44d120;
+	color: var(--color-blanco);
+	border-color: #38ac1b;
+	border-radius: 50%;
+}
+
+.btn-descarga:hover{
+	background-color: #38ac1b;
+	color: var(--color-blanco);
+	border-color: #44d120;
+	border-radius: 50%;
+}
+
+.btn-eliminar{
+	background-color: #ca0000;
+	color: var(--color-blanco);
+	border-color: #7c0a0a;
+	border-radius: 50%;
+}
+
+.btn-eliminar:hover{
+	background-color: #7c0a0a;
+	color: var(--color-blanco);
+	border-color: #ca0000;
+	border-radius: 50%;
+}
+
+.btn-panel{
+	background-color: #1b396a;
+	color: var(--color-blanco);
+	border-color: #1b396a;
+}
+
+.btn-panel:hover{
+	background-color: #0b244b;
+	color: var(--color-blanco);
+	border-color: #0b244b;
+}
+
+.btn-blue-card{ /*botones usados dentro de la card y modal*/
+	background-color: #1b396a;
+	color: #ffffff;
+	border-color: #1b396a;
+	border-radius: 12px;
+}
+
+.btn-blue-card:hover{ /*opcion hover para el boton de arriba*/
+	background-color: #0b244b;
+	color: #ffffff;
+	border-color: #0b244b;
+	border-radius: 12px;
+}
+.btn-red-card{ /*botones usados dentro de la card y modal*/
+	background-color: #BB0101;
+	color: #ffffff;
+	border-color: #BB0101;
+	border-radius: 12px;
+}
+
+.btn-red-card:hover{ /*opcion hover para el boton de arriba*/
+	background-color: #970202;
+	color: #ffffff;
+	border-color: #970202;
+	border-radius: 12px;
+}
+
+.borde-button{ /*opciones para el borde del boton editar*/
+	border-radius: 10px;
+	border: 1px solid #707070;
+}
+
+
+
+.select-cus{
+  color: #fff;
+  background: #1b396a;
+  border: 1px solid #ced4da;
+  appearance: none;
+}
+
+
+.text-b{
+	color: #1b396a;
+}
+/*----------------link---------------------------------------*/
+/* a:link, a:visited, a:active {
+	text-decoration:none;
+	color: #1b396a;
+}
+ */
+
+
+
+.borde-right{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: none;
+    border-bottom: 2px  solid #214e97;
+}
+
+.borde-left{
+    border-top-left-radius: 25px; 
+    border-bottom-left-radius: 25px;
+    background: var(--color-blanco);
+    border-right: none;
+    border-bottom: 2px  solid #214e97;
+}
+
+.card-login{
+    background: rgb(255, 255, 255, 1);
+    border-radius: 25px; 
+    border: 2px  solid #55b3d8;
+    border-bottom: 2px  solid #55b3d8;
+}
+
+.card-panel{
+	background: var(--color-blanco);
+	font-size: x-large;
+	font-weight: bold;
+	border: 2px solid;
+	border-color: #5587d8;
+	border-radius: 22px;
+}
+.card-panel a{
+	text-decoration:none;
+	color: #1b396a;
+}
+
+.text-black{
+	color: #000 !important;
+}
+
+.shadow{
+	box-shadow: -3px 3px 5px rgb(153, 153, 153, 0.7);
+}
+
+/* -------- cards archivos -------------------------------------- */
+.card-contorno{
+	background: none;
+	border: 1px solid;
+	border-color: #02135f;
+	border-radius: 10px;
+}
+
+.card-archivo{
+	background: none;
+	border: 1px solid;
+	border-color: #000;
+	border-radius: 17px;
+}
+
+/*-------------inicio efecto hover archivos-----------------------*/
+  
+  .contenerdor-btn{
+	position: relative;
+	overflow: hidden;
+  
+  }
+  
+  .boton-emergente{
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	padding: 7px;  
+	transform: translateY(-50%);
+	transition: all 0.5s ease-out;
+  }
+  
+  .contenerdor-btn:hover .boton-emergente{
+	transform: translateY(-85%);
+	visibility: visible;
+	opacity: 100;
+  }
+/*-------------fin efecto hover archivos-----------------------*/
+
+.table-body{ /*color del cuerpo de la tabla*/
+	background-color: #E2F0FF;
+	width: 100%;
+}
+
+.table-head{ /*color de la cabecera de la tabla*/
+	background-color: #3378BF;
+	color: white;
+	width: 100%;
+}
+
+
+.pricing .card:hover {
+	margin-top: -.25rem;
+	margin-bottom: .25rem;
+	box-shadow: 0 0.5rem 1rem 0 rgba(3, 101, 167, 0.4);
+}
