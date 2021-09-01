@@ -9,8 +9,16 @@
     //constante con la url base de la pagina
     define('SERVIDOR', "http://localhost/project/");
     //ubicacion de carpetas (dependencias)
-    define('DEP_CSS', SERVIDOR . "css/");
-    define('DEP_SCRIPT', SERVIDOR . "js/");
+    define('DEP_CSS', SERVIDOR . "public/css/");
+    define('DEP_SCRIPT', SERVIDOR . "public/js/");
+    define('DEP_IMG', SERVIDOR . "public/img/");
+    define('CONTROLLER', SERVIDOR . "controller/");
+    //dependencias archivos
+    define('AUDIO', SERVIDOR . "public/files/audio/");
+    define('DOC', SERVIDOR . "public/files/doc/");
+    define('PDF', SERVIDOR . "public/files/pdf/");
+    define('VIDEO', SERVIDOR . "public/files/video/");
+    define('EXCEL', SERVIDOR . "public/files/xlsx/");
     //constante en caso de error
     define('error', "view/404");
     //este arreglo contiene todas las direcciones de la pagina

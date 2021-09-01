@@ -10,7 +10,7 @@
 		<div class="col-md-4 py-2 rounded bg-light border shadow">
 			<h1 class="mt-3 text-uppercase">Login</h1>
 			<hr class="bg-primary">
-			<img class="mb-2" src="img/favico.png" width="250px" height="250px">
+			<img class="mb-2" src="<?=DEP_IMG?>favico.png" width="250px" height="250px">
 			<form id="frmLogin" class="form-grup mb-3 ml-3 mr-3">
 				<div class="input-group mb-2">
 					<div class="input-group-prepend">
@@ -33,4 +33,4 @@
 		</div>
 	</div>
 </div>
-<script src="<?=SERVIDOR?>controller/funciones_login.js"></script>
+<script src="<?=CONTROLLER?>funciones_login.js"></script>

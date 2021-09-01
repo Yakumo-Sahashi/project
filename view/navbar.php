@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light  scrorev-nav-control bg-primary menu">
   <div class="container text-center">
 
-    <a class="navbar-brand text-white" href="home"><img loading="lazy" src="<?=SERVIDOR?>img/favico.png" width="30px"
+    <a class="navbar-brand text-white" href="home"><img loading="lazy" src="<?=DEP_IMG?>favico.png" width="30px"
       height="30px"> LOGO</a>
 
     <!-- Boton de hamburgesa al cambiar el tamaño de pantalla -->
