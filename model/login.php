@@ -1,7 +1,6 @@
 <?php 
     require_once 'conector.php';
     require_once 'sesion.php';
-    session_start();
     //creamos un nuevo objeto apartir de la clase Login
     $login = new Login();
     //varificamos que los campos de usuario y password no lleguen vacios
@@ -11,9 +10,8 @@
         //imprimimos el resultado de la funcion iniciar_sesion
         //sele pasa como parametro la conexion
         echo $login -> iniciar_sesion(Conector::obtener_conexion());
-    }
-    //validacion que la accion solicitada sea la correcta
-    if($_POST['funcion'] == 3){
+    }else if($_POST['funcion'] == 3){
+        //validacion que la accion solicitada sea la correcta
         //iniciamos la conexion a la DB
         Conector::abrir_conexion();
         //imprimimos el resultado de la funcion cerrar_sesion

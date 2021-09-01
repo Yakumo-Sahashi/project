@@ -24,6 +24,6 @@
         }
     ?>
     <!-- operador ternario permite obtener el titulo de la pagina que estamos solicitando -->
-    <title><?= $titulo = $title == '' ? TITULO_PAGINA : $title;?></title>
+    <title><?= $titulo = !isset($title) ? TITULO_PAGINA : $title;?></title>
 </body>
 </html>

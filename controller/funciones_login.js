@@ -35,7 +35,7 @@ $(document).ready(() => {
             window.location = "home";
           });
         } else {
-          alertaLg("Usuario o contraseña incorrectos! " + r);
+          alertaLg("Usuario o contraseña incorrectos! "+r);
           return false;
         }
       }
