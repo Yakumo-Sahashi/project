@@ -1,4 +1,4 @@
-<?php require_once 'model/sesion.php';?>
+<?php require_once 'model/sesion.php'; //traemos al documento sesion?>
 <nav class="navbar navbar-expand-lg navbar-light  scrorev-nav-control bg-primary menu">
   <div class="container text-center">
 
@@ -27,6 +27,7 @@
 
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
+          <!-- imprimimos el resultado de funcion  obtener_sesion no se requiere un echo -->
           <?=Sesion::obtener_sesion()?>
         </li>
       </ul>

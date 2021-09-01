@@ -1,4 +1,4 @@
-    
+    <!-- el uso de la constante SERVIDOR permite obtener el path completo de las dependencias-->
     <link rel="icon" type="image/ico" href="<?=SERVIDOR;?>img/favico.png">
     <link rel="stylesheet" href="<?=DEP_CSS;?>b4/bootstrap.css">
     <link rel="stylesheet" href="<?=DEP_CSS;?>main.css">

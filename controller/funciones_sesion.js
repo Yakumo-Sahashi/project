@@ -7,9 +7,19 @@ $(document).ready(()=> {
       url:'model/login.php',
       success: (r)=>{
         if(r==="2"){
-          setTimeout(()=>{
-            window.location="login";
-          },3000); 
+          swal({
+            icon: "success",
+            title: "Cerrando sesion...",
+            html: true,
+            text: '\n\n Estas siendo redirigido automaticamente...',
+            closeOnClickOutside: false,
+            closeOnEsc: false,
+            value: true,
+            buttons: false,
+            timer: 1500
+          }).then((value) => {
+            window.location = "login";
+          });
         }
       }
     });

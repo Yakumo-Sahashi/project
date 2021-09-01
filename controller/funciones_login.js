@@ -21,13 +21,20 @@ $(document).ready(() => {
       url: 'model/login.php',
       success: (r) => {
         if (r === "2") {
-          setTimeout(() => {
-            //ending();
+          swal({
+            icon: "success",
+            title: "Credenciales de acceso validas!",
+            html: true,
+            text: '\n\n Estas siendo redirigido automaticamente...',
+            closeOnClickOutside: false,
+            closeOnEsc: false,
+            value: true,
+            buttons: false,
+            timer: 1500
+          }).then((value) => {
             window.location = "home";
-          }, 2000);
+          });
         } else {
-          //$('#login_inic')[0].reset();    
-          //loader.ending();
           alertaLg("Usuario o contraseña incorrectos! " + r);
           return false;
         }
